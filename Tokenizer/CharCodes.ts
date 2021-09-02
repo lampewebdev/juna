@@ -1,0 +1,183 @@
+export enum CharCodes {
+  Null = 0,
+  backspace = 8,
+  tab = 9,
+  lineFeed = 10,
+  verticalTab = 11,
+  formFeed = 12,
+  carriageReturn = 13,
+  space = 32,
+  exclamationMark = 33,
+  doubleQuote = 34,
+  hash = 35,
+  percent = 37,
+  ampersand = 38,
+  singleQuote = 39,
+  leftParenthesis = 40,
+  rightParenthesis = 41,
+  asterisk = 42,
+  plus = 43,
+  comma = 44,
+  dash = 45,
+  dot = 46,
+  slash = 47,
+  zero = 48,
+  one = 49,
+  two = 50,
+  three = 51,
+  four = 52,
+  five = 53,
+  six = 54,
+  seven = 55,
+  eight = 56,
+  nine = 57,
+  colon = 58,
+  semicolon = 59,
+  lessThan = 60,
+  equal = 61,
+  greaterThan = 62,
+  questionMark = 63,
+  at = 64,
+  upperA = 65,
+  upperB = 66,
+  upperC = 67,
+  upperD = 68,
+  upperE = 69,
+  upperF = 70,
+  upperG = 71,
+  upperH = 72,
+  upperI = 73,
+  upperJ = 74,
+  upperK = 75,
+  upperL = 76,
+  upperM = 77,
+  upperN = 78,
+  upperO = 79,
+  upperP = 80,
+  upperQ = 81,
+  upperR = 82,
+  upperS = 83,
+  upperT = 84,
+  upperU = 85,
+  upperV = 86,
+  upperW = 87,
+  upperX = 88,
+  upperY = 89,
+  upperZ = 90,
+  leftBracket = 91,
+  backslash = 92,
+  rightBracket = 93,
+  caret = 94,
+  underscore = 95,
+  backtick = 96,
+  lowerA = 97,
+  lowerB = 98,
+  lowerC = 99,
+  lowerD = 100,
+  lowerE = 101,
+  lowerF = 102,
+  lowerG = 103,
+  lowerH = 104,
+  lowerI = 105,
+  lowerJ = 106,
+  lowerK = 107,
+  lowerL = 108,
+  lowerM = 109,
+  lowerN = 110,
+  lowerO = 111,
+  lowerP = 112,
+  lowerQ = 113,
+  lowerR = 114,
+  lowerS = 115,
+  lowerT = 116,
+  lowerU = 117,
+  lowerV = 118,
+  lowerW = 119,
+  lowerX = 120,
+  lowerY = 121,
+  lowerZ = 122,
+}
+// const charCodes: Map<string, number> = new Map();
+// // Symbols
+// charCodes.set("tab", 9);
+// charCodes.set("feedCharacter", 10);
+// charCodes.set("CarriageReturn", 13);
+// charCodes.set("space", 32);
+// charCodes.set("exclamation", 33);
+// charCodes.set("doubleQuote", 34);
+// charCodes.set("singleQuote", 39);
+// charCodes.set("hash", 35);
+// charCodes.set("amp", 38);
+// charCodes.set("apos", 39);
+// charCodes.set("slash", 47);
+// charCodes.set("lt", 60);
+// charCodes.set("eq", 61);
+// charCodes.set("gt", 62);
+// charCodes.set("backslash", 92);
+
+// // Alphabet
+// charCodes.set("lowerA", 97);
+// charCodes.set("upperA", 65);
+// charCodes.set("lowerB", 98);
+// charCodes.set("upperB", 66);
+// charCodes.set("lowerC", 99);
+// charCodes.set("upperC", 67);
+// charCodes.set("lowerD", 100);
+// charCodes.set("upperD", 68);
+// charCodes.set("lowerE", 101);
+// charCodes.set("upperE", 69);
+// charCodes.set("lowerF", 102);
+// charCodes.set("upperF", 70);
+// charCodes.set("lowerG", 103);
+// charCodes.set("upperG", 71);
+// charCodes.set("lowerH", 104);
+// charCodes.set("upperH", 72);
+// charCodes.set("lowerI", 105);
+// charCodes.set("upperI", 73);
+// charCodes.set("lowerJ", 106);
+// charCodes.set("upperJ", 74);
+// charCodes.set("lowerK", 107);
+// charCodes.set("upperK", 75);
+// charCodes.set("lowerL", 108);
+// charCodes.set("upperL", 76);
+// charCodes.set("lowerM", 109);
+// charCodes.set("upperM", 77);
+// charCodes.set("lowerN", 110);
+// charCodes.set("upperN", 78);
+// charCodes.set("lowerO", 111);
+// charCodes.set("upperO", 79);
+// charCodes.set("lowerP", 112);
+// charCodes.set("upperP", 80);
+// charCodes.set("lowerQ", 113);
+// charCodes.set("upperQ", 81);
+// charCodes.set("lowerR", 114);
+// charCodes.set("upperR", 82);
+// charCodes.set("lowerS", 115);
+// charCodes.set("upperS", 83);
+// charCodes.set("lowerT", 116);
+// charCodes.set("upperT", 84);
+// charCodes.set("lowerU", 117);
+// charCodes.set("upperU", 85);
+// charCodes.set("lowerV", 118);
+// charCodes.set("upperV", 86);
+// charCodes.set("lowerW", 119);
+// charCodes.set("upperW", 87);
+// charCodes.set("lowerX", 120);
+// charCodes.set("upperX", 88);
+// charCodes.set("lowerY", 121);
+// charCodes.set("upperY", 89);
+// charCodes.set("lowerZ", 122);
+// charCodes.set("upperZ", 90);
+// // Numbers
+// charCodes.set("zero", 48);
+// charCodes.set("one", 49);
+// charCodes.set("two", 50);
+// charCodes.set("three", 51);
+// charCodes.set("four", 52);
+// charCodes.set("five", 53);
+// charCodes.set("six", 54);
+// charCodes.set("seven", 55);
+// charCodes.set("eight", 56);
+// charCodes.set("nine", 57);
+
+// export default charCodes;
