@@ -5,7 +5,8 @@ export const isWhiteSpace = (charCode: number): boolean => {
     charCode === CharCodes.space ||
     charCode === CharCodes.tab ||
     charCode === CharCodes.lineFeed ||
-    charCode === CharCodes.carriageReturn
+    charCode === CharCodes.carriageReturn ||
+    charCode === CharCodes.formFeed
   );
 };
 
